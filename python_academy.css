@@ -128,7 +128,7 @@ pre code{
 	background-color: #E1E1E1;
 /*	margin: 0 auto;*/
 /*	max-width: 60%;*/
-	font-family: 'Menlo';
+	font-family: 'Menlo', "Roboto Mono", monospace;
 /*	padding: 30px 40px;*/
 	font-size: 0.8rem;
 	line-height: 1.6;
@@ -137,7 +137,7 @@ pre code{
 pre{
 	font-family: inherit;
 	font-size: inherit;
-	line-height: inherit;
+	line-height: 0.8rem;;
 	white-space: pre-wrap;
 }
 
