@@ -137,7 +137,8 @@ pre code{
 pre{
 	font-family: inherit;
 	font-size: inherit;
-	line-height: 0.8rem;;
+	font-size: 0.8rem;
+	line-height: 1.6;
 	white-space: pre-wrap;
 }
 
