@@ -99,6 +99,10 @@
 	font-size: 1rem;
 }
 
+.code_summary p{
+	font-size: 1rem;
+}
+
 .code_summary{
 	max-width: 60%;
 	height: auto;
@@ -112,7 +116,7 @@
 	margin: 0 auto;
 	max-width: 60%;
 	height: auto;
-	font-family: 'Menlo';
+	font-family: 'Menlo', "Roboto Mono", monospace;
 	padding: 20px 40px;
 	font-size: 0.8rem;
 	line-height: 1.6;
