@@ -135,8 +135,7 @@ pre code{
 }
 
 pre{
-	font-family: inherit;
-	font-size: inherit;
+	font-family: 'Menlo', "Roboto Mono", monospace;
 	font-size: 0.8rem;
 	line-height: 1.6;
 	white-space: pre-wrap;
@@ -144,36 +143,36 @@ pre{
 
 .print{
 	color: #CC2782;
-	font-family: inherit;
-	font-size: inherit;
-	line-height: inherit;
+	font-family: 'Menlo', "Roboto Mono", monospace;
+	font-size: 0.8rem;
+	line-height: 1.6;
 }
 
 .string{
 	color: #00A585;
-	font-family: inherit;
-	font-size: inherit;
-	line-height: inherit;
+	font-family: 'Menlo', "Roboto Mono", monospace;
+	font-size: 0.8rem;
+	line-height: 1.6;
 }
 
 .comment{
 	color: #803AD0;
-	font-family: inherit;
-	font-size: inherit;
-	line-height: inherit;
+	font-family: 'Menlo', "Roboto Mono", monospace;
+	font-size: 0.8rem;
+	line-height: 1.6;
 	margin-left: 15px;
 }
 
 .print{
 	color: #CC2782;
-	font-family: inherit;
-	font-size: inherit;
-	line-height: inherit;
+	font-family: 'Menlo', "Roboto Mono", monospace;
+	font-size: 0.8rem;
+	line-height: 1.6;
 }
 
 .function{
 	color: #1256CC;
-	font-family: inherit;
-	font-size: inherit;
-	line-height: inherit;
+	font-family: 'Menlo', "Roboto Mono", monospace;
+	font-size: 0.8rem;
+	line-height: 1.6;
 }
