@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Try Except</title>
+		<link href="python_academy.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div class="navbar">
+			<span class='title'><a href="python_academy.html">Python Academy</a></span>
+			<ul class='menu'>
+				<li>Condicionales</li>
+				<li>Ciclos</li>
+				<li><a href="try_except.html#">Try Except</a></li>
+				<li><a href="listas.html#">Listas</a></li>
+			</ul>
+		</div>
+		<div class="container">
+			<div class="column_img">
+				<img src="try_except.svg" style="margin-top: -10px;">
+			</div>
+			<div class="column_text">
+				<h1>Try Except</h1>
+				<p>El try except nos permite cachar posibles errores en el código para evitar que nuestro programa explote. Nos da la oportunidad de intentar correr un bloque de código y, en caso de que no funcione, ejecutar otras líneas de código.</p>
+				<p>Al usar un try except es importante fijarnos en la indentación de nuestro código, pues de esa forma le indicaremos a nuestro programa qué se ejecuta en el try y qué en el except.</p>
+				<p>Veamos algunos ejemplos.</p>
+			</div>
+		</div>
+		<div class="code_summary">
+			Si tratáramos de convertir el string <span class="code_word">'7.9'</span> a un número entero, el código nos marcaría un error, pues 7.9 no es un número entero. Sin embargo, si usamos un try except podemos primero intentar convertirlo a entero y, en caso de no ser posible, convertirlo a un float.
+		</div>
+		<div class="code_box">
+			<pre>
+<code>b = <span class="string">'7.9'</span>
+<span class="function">try</span>:
+    c = <span class="print">int</span>(b)
+<span class="function">except</span>:
+    c = <span class="print">float</span>(b)
+<span class="print">print</span>(c)<span class="comment">#7.9</span></code></pre>
+		</div>
+		<div class="code_summary">
+			El try except nos permite adelantarnos a posibles errores que pueda cometer el usuario. Veamos el siguiente ejemplo en el que le pedimos un número entero al usuario. Si el usuario nos da otro tipo de variable, le volvemos a pedir un número. 
+			<p>En este caso no depende de nosotros que el usuario ingrese lo que le pedimos de forma correcta. Por eso es bueno tener una manera de evitar posibles errores que puedan hacer que nuestro código nos marque un error.</p>
+		</div>
+		<div class="code_box">
+			<pre>
+<code><span class="function">while </span><span class="print">True</span>:
+    n = <span class="print">input</span>(<span class="string">Dame un número entero: </span>)
+    <span class="function">try</span>:
+        n = <span class="print">int</span>(n)<span class="comment">#Tratamos de convertir n a un número entero.</span>
+        <span class="function">break</span><span class="comment">#En caso de lograrlo nos salimos del ciclo.</span>
+    <span class="function">except</span>:
+	<span class="print">print</span>(<span class="string">Eso no es un número entero.</span>)<span class="comment">#Caso en el que n no es un número entero.</span></code></pre>
+		</div>
+	</body>
+</html>
