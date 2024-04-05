@@ -31,41 +31,43 @@
 		<div class="code_summary">
 			Veamos algunas funciones comunes de las listas.
 		</div>
-		<div class="code_box">
-			<pre>
-<code>lista = [<span class="string">'hola'</span>, 71, 6.9]
+			<div class="code_box">
+				<div class="code_content">
+				<pre><code>lista = [<span class="string">'hola'</span>, 71, 6.9]
 <span class="print">print</span>(lista[0])<span class="comment">#'hola'</span>
 <span class="print">print</span>(lista[-1])<span class="comment">#6.9</span>
 lista.append(<span class="string">'bye'</span>)
 <span class="print">print</span>(lista)<span class="comment">#['hola', 71, 6.9, 'bye']</span>
 <span class="print">print</span>(lista[-1])<span class="comment">#'bye'</span>
 lista.pop(1)<span class="comment">#quita el elemento con índice 1 de la lista, en este caso el 71</span>
-<span class="print">print</span>(lista)<span class="comment">#['hola', 6.9, 'bye']</span>
-</code></pre>
-		</div>
+<span class="print">print</span>(lista)<span class="comment">#['hola', 6.9, 'bye']</span></code></pre>
+			</div>
+			</div>
 		<div class="code_summary">
 			Podemos iterar sobre los elementos de una lista.
 		</div>
 		<div class="code_box">
-			<pre>
-<code>lista = [5, 10, 15, 20]
+			<div class="code_content">
+			<pre><code>lista = [5, 10, 15, 20]
 cuadrados = []
 <span class="function">for</span> i<span class="function"> in </span>lista:	
     cuadrados.append(i**2)
 <span class="print">print</span>(cuadrados)<span class="comment">#[25, 100, 225, 400]</span>
 </code></pre>
 		</div>
+		</div>
 		<div class="code_summary">
 			Para insertar un elemento a una lista en una posición específica podemos usar el método <span class="code_word">insert</span>.
 		</div>
 		<div class="code_box">
-			<pre>
-<code>lista = [1, 2, 4, 5]
+			<div class="code_content">
+			<pre><code>lista = [1, 2, 4, 5]
 lista.insert(2, 3)<span class="comment">#insertamos el número 3 en la posición 2</span>
 <span class="print">print</span>(lista)<span class="comment">#[1, 2, 3, 4, 5]</span>
 lista.append(6)<span class="comment">#agrega el número 6 hasta el final de la lista</span>
 <span class="print">print</span>(lista)<span class="comment">#[1, 2, 3, 4, 5, 6]</span>
 </code></pre>
+		</div>
 		</div>
 	</body>
 </html>

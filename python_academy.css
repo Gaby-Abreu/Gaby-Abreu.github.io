@@ -66,6 +66,20 @@
 	display: inline-block;
 }
 
+@media only screen and (max-width: 460px){
+/*	.container{*/
+/*		flex-direction: column;*/
+/*	}*/
+	.container{
+		display: block;
+	}
+	.column_img, .column_text{
+		width: 100%;
+		margin-bottom: 15%;
+		margin-top: 0;
+	}
+}
+
 
 .container h1{
 	text-align: left;
@@ -107,11 +121,16 @@ p{
 	height: auto;
 	overflow-x: auto;
 /*	font-family: 'Menlo', "Roboto Mono", monospace;*/
-	padding: 20px 40px;
+	padding: 20px 0px;
 	font-size: 0.8rem;
 	line-height: 1.5;
 /*	position: relative;*/
 /*	clear: both;*/
+}
+
+.code_content{
+	margin: 0px 40px;
+	display: inline-block;
 }
 
 pre code{
@@ -125,6 +144,7 @@ pre code{
 }
 
 pre{
+	width: 90%;
 	white-space: pre;
 }
 

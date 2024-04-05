@@ -32,19 +32,22 @@
 			Si tratáramos de convertir el string <span class="code_word">'7.9'</span> a un número entero, el código nos marcaría un error, pues 7.9 no es un número entero. Sin embargo, si usamos un try except podemos primero intentar convertirlo a entero y, en caso de no ser posible, convertirlo a un float.
 		</div>
 		<div class="code_box">
-			<pre>
+			<div class="code_content">
+				<pre>
 <code>b = <span class="string">'7.9'</span>
 <span class="function">try</span>:
     c = <span class="print">int</span>(b)
 <span class="function">except</span>:
     c = <span class="print">float</span>(b)
 <span class="print">print</span>(c)<span class="comment">#7.9</span></code></pre>
+			</div>
 		</div>
 		<div class="code_summary">
 			El try except nos permite adelantarnos a posibles errores que pueda cometer el usuario. Veamos el siguiente ejemplo en el que le pedimos un número entero al usuario. Si el usuario nos da otro tipo de variable, le volvemos a pedir un número. 
 			<p>En este caso no depende de nosotros que el usuario ingrese lo que le pedimos de forma correcta. Por eso es bueno tener una manera de evitar posibles errores que puedan hacer que nuestro código nos marque un error.</p>
 		</div>
 		<div class="code_box">
+			<div class="code_content">
 			<pre>
 <code><span class="function">while </span><span class="print">True</span>:
     n = <span class="print">input</span>(<span class="string">Dame un número entero: </span>)
@@ -53,6 +56,7 @@
         <span class="function">break</span><span class="comment">#En caso de lograrlo nos salimos del ciclo.</span>
     <span class="function">except</span>:
 	<span class="print">print</span>(<span class="string">Eso no es un número entero.</span>)<span class="comment">#Caso en el que n no es un número entero.</span></code></pre>
+		</div>
 		</div>
 	</body>
 </html>
