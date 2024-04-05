@@ -66,20 +66,6 @@
 	display: inline-block;
 }
 
-@media only screen and (max-width: 460px){
-/*	.container{*/
-/*		flex-direction: column;*/
-/*	}*/
-	.container{
-		display: block;
-	}
-	.column_img, .column_text{
-		width: 100%;
-		margin-bottom: 15%;
-		margin-top: 0;
-	}
-}
-
 
 .container h1{
 	text-align: left;
@@ -126,6 +112,27 @@ p{
 	line-height: 1.5;
 /*	position: relative;*/
 /*	clear: both;*/
+}
+
+@media only screen and (max-width: 460px){
+/*	.container{*/
+/*		flex-direction: column;*/
+/*	}*/
+	.container{
+		display: block;
+	}
+	.column_img, .column_text{
+		width: 100%;
+		margin-bottom: 15%;
+		margin-top: 0;
+	}
+	.code_summary{
+		max-width: 90%;
+		margin: 5% auto;
+	}
+	.code_box{
+		max-width: 100%;
+	}
 }
 
 .code_content{
