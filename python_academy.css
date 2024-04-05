@@ -96,7 +96,8 @@ p{
 	height: auto;
 	margin: 20px auto 20px;
 	line-height: 1.5;
-	color: #212529;
+	color: #212529;s
+	text-align: justify;
 }
 
 .code_box{
