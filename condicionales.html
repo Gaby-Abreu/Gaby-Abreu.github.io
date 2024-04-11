@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Condicionales</title>
+		<link href="python_academy.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div class="navbar">
+			<span class='title'><a href="python_academy.html">Python Academy</a></span>
+			<ul class='menu'>
+				<li><a href="condicionales.html#">Condicionales</a></li>
+				<li><a href="ciclos.html#">Ciclos</a></li>
+				<li><a href="try_except.html#">Try Except</a></li>
+				<li><a href="listas.html#">Listas</a></li>
+			</ul>
+		</div>
+		<div class="container">
+			<div class="column_img">
+				<img src="if.svg">
+			</div>
+			<div class="column_text">
+				<h1>Condicionales</h1>
+				<p>Los condicionales nos sirven para ejecutar un bloque de código en caso de que se cumpla cierta condición. En caso contrario podemos ejecutar un código distinto o no ejecutar nada.</p>
+				<p>Para esto podemos usar un <span class="code_word">if else</span>. Sin embargo, cuando queremos evaluar varias condiciones distintas podemos usar un <span class="code_word">elif</span> en vez de un <span class="code_word">else</span>.
+					<p>Veamos algunos ejemplos.</p>
+				</p>
+			</div>
+		</div>
+			<div class="code_summary">
+				Un clásico <span class="code_word">if else</span> para ver si un número es par o impar. En este ejemplo, se va a evaluar la condición <span class="code_word">n%2 == 0</span>. En caso de que la condición sea verdadera, el número es par. En otro caso, el número es impar.
+			</div>
+			<div class="code_box">
+				<div class="code_content">
+<pre><code>n = 27
+<span class="function">if </span>n%2 == 0:
+    <span class="print">print</span>(<span class="string">f'{n} es par.'</span>)
+<span class="function">else</span>:
+    <span class="print">print</span>(<span class="string">f'{n} es impar.'</span>)</code></pre>
+				</div>
+			</div>
+		<div class="code_summary">
+			Veamos un ejemplo de un <span class="code_word">if elif else</span>. Queremos ver si un número es estrictamente positivo, negativo o cero.
+		</div>
+		<div class="code_box">
+			<div class="code_content">
+				<pre><code>n = -13
+<span class="function">if </span>n > 0:
+    <span class="print">print</span>(<span class="string">f'{n} es estrictamente positivo.'</span>)
+<span class="function">elif</span> n &lt 0:
+    <span class="print">print</span>(<span class="string">f'{n} es negativo.'</span>)
+<span class="function">else</span>:
+    <span class="print">print</span>(<span class="string">f'{n} es cero.'</span>)</code></pre>
+			</div>
+		</div>
+		<div class="code_summary">
+			<p>Es importante mencionar que cuando usamos un <span class="code_word">if elif else</span>, la condición que se cumpla primero es la que se va a ejecutar y las demás condiciones ya ni serán revisadas. </p>
+			<p>Veamos el siguiente ejemplo en el que evaluamos si un número es par o múltiplo de 3. Como la primera condición que se revisa es si el número es par, los números que son pares y múltiplos de 3 sólo entrarán a la primera condición. </p>
+		</div>
+		<div class="code_box">
+			<div class="code_content">
+				<pre><code>n = 18
+<span class="function">if </span>n%2 == 0: <span class="comment"># verdadero</span>
+    <span class="print">print</span>(<span class="string">f'{n} es múltiplo de 2.'</span>) <span class="comment"># esto se va a imprimir</span>
+<span class="function">elif</span> n%3 == 0: <span class="comment"># esta condición es verdadera, pero ya no se revisa porque la condición anterior se cumplió</span>
+    <span class="print">print</span>(<span class="string">f'{n} es múltiplo de 3.'</span>) <span class="comment"># esto no se va a ejecutar</span>
+<span class="function">else</span>:
+    <span class="print">print</span>(<span class="string">f'{n} no es ni múltiplo de 2 ni de 3.'</span>)</code></pre>
+			</div>
+		</div>
+
+		<div class="code_summary">
+			Un <span class="code_word">if </span> no necesariamente tiene que tener un <span class="code_word">elif</span> o un <span class="code_word">else</span>. Si no se cumple la condición que queremos, podemos simplemente no hacer nada. Veamos un ejemplo en el que nos interesa sacar el valor absoluto de un número.
+		</div>
+		<div class="code_box">
+			<div class="code_content">
+				<pre><code>n = 93
+<span class="function">if </span>n &lt 0:
+    n = -n <span class="comment"># esta línea de código no se va a ejecutar.</span>
+<span class="print">print</span>(n) <span class="comment"># 93</span></code></pre>
+			</div>
+		</div>
+	</body>
+</html>

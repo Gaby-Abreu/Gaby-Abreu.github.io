@@ -11,8 +11,8 @@
 		<div class="navbar">
 			<span class='title'><a href="python_academy.html">Python Academy</a></span>
 			<ul class='menu'>
-				<li>Condicionales</li>
-				<li>Ciclos</li>
+				<li><a href="condicionales.html#">Condicionales</a></li>
+				<li><a href="ciclos.html#">Ciclos</a></li>
 				<li><a href="try_except.html#">Try Except</a></li>
 				<li><a href="listas.html#">Listas</a></li>
 			</ul>
@@ -23,8 +23,7 @@
 			</div>
 			<div class="column_text">
 				<h1>Try Except</h1>
-				<p>El try except nos permite cachar posibles errores en el código para evitar que nuestro programa explote. Nos da la oportunidad de intentar correr un bloque de código y, en caso de que no funcione, ejecutar otras líneas de código.</p>
-				<p>Al usar un try except es importante fijarnos en la indentación de nuestro código, pues de esa forma le indicaremos a nuestro programa qué se ejecuta en el try y qué en el except.</p>
+				<p>El try except nos permite cachar posibles errores en el código para evitar que nuestro programa explote. Nos da la oportunidad de intentar correr un bloque de código y, en caso de que no funcione, intentar algo distinto.</p>
 				<p>Veamos algunos ejemplos.</p>
 			</div>
 		</div>
@@ -43,19 +42,19 @@
 			</div>
 		</div>
 		<div class="code_summary">
-			El try except nos permite adelantarnos a posibles errores que pueda cometer el usuario. Veamos el siguiente ejemplo en el que le pedimos un número entero al usuario. Si el usuario nos da otro tipo de variable, le volvemos a pedir un número. 
-			<p>En este caso no depende de nosotros que el usuario ingrese lo que le pedimos de forma correcta. Por eso es bueno tener una manera de evitar posibles errores que puedan hacer que nuestro código nos marque un error.</p>
+			<p>El try except nos permite adelantarnos a posibles errores que pueda cometer el usuario. Veamos el siguiente ejemplo en el que le pedimos un número entero al usuario. Si el usuario nos da otro tipo de variable, le volvemos a pedir un número.</p>
+			<p>En este caso no depende de nosotros que el usuario ingrese lo que le pedimos de forma correcta. Por eso es bueno tener una manera de evitar posibles errores que puedan hacer que nuestro código ser rompa.</p>
 		</div>
 		<div class="code_box">
 			<div class="code_content">
 			<pre>
 <code><span class="function">while </span><span class="print">True</span>:
-    n = <span class="print">input</span>(<span class="string">Dame un número entero: </span>)
+    n = <span class="print">input</span>(<span class="string">'Dame un número entero: '</span>)
     <span class="function">try</span>:
-        n = <span class="print">int</span>(n)<span class="comment">#Tratamos de convertir n a un número entero.</span>
-        <span class="function">break</span><span class="comment">#En caso de lograrlo nos salimos del ciclo.</span>
+        n = <span class="print">int</span>(n)<span class="comment"># tratamos de convertir n a un número entero</span>
+        <span class="function">break</span><span class="comment"># en caso de lograrlo nos salimos del ciclo</span>
     <span class="function">except</span>:
-	<span class="print">print</span>(<span class="string">Eso no es un número entero.</span>)<span class="comment">#Caso en el que n no es un número entero.</span></code></pre>
+        <span class="print">print</span>(<span class="string">'Eso no es un número entero.'</span>)<span class="comment"># caso en el que n no es un número entero</span></code></pre>
 		</div>
 		</div>
 	</body>

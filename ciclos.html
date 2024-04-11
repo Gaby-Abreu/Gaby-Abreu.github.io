@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ciclos</title>
+		<link href="python_academy.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div class="navbar">
+			<span class='title'><a href="python_academy.html">Python Academy</a></span>
+			<ul class='menu'>
+				<li><a href="condicionales.html#">Condicionales</a></li>
+				<li><a href="ciclos.html#">Ciclos</a></li>
+				<li><a href="try_except.html#">Try Except</a></li>
+				<li><a href="listas.html#">Listas</a></li>
+			</ul>
+		</div>
+		<div class="container">
+			<div class="column_img">
+				<img src="loop.svg">
+			</div>
+			<div class="column_text">
+				<h1>Ciclos</h1>
+				<p>Los ciclos nos sirven para ejecutar un bloque de código varias veces. De esta manera no tenemos que escribir las mismas líneas de código n veces.</p>
+				<p>Hay distintos tipos de ciclos y según la situación nos convendrá usar uno u otro. Existen el ciclo <span class="code_word">for</span> y el ciclo <span class="code_word">while</span>.</p>
+				<p>El ciclo <span class="code_word">while</span> se ejecutará siempre que la condición que indiquemos sea verdadera. Por otro lado, el ciclo <span class="code_word">for</span> iterará un proceso el número de veces que nosotros queramos.</p>
+				<p>Vemos cómo funcionan estos dos ciclos.</p>
+			</div>
+		</div>
+			<div class="code_summary">
+				<h2>Ciclo for</h2>
+				Empecemos con el ciclo <span class="code_word">for</span>. Imaginemos que queremos sumar los primeros 50 números naturales (sin el cero). Para esto usaremos la función <span class="code_word">range(b, c)</span>. Esta función es incluyente en el extremo izquierdo y excluyente en el extremo derecho. Es decir, <span class="code_word">range(b, c)</span> recorrerá todos los números mayores o iguales a <span class="code_word">b</span> y menores estrictos a <span class="code_word">c</span>.
+			</div>
+			<div class="code_box">
+				<div class="code_content">
+<pre><code>suma = 0
+<span class="function">for </span>i <span class="function">in</span> <span class="print">range</span>(1, 51): <span class="comment"># números del 1 al 50, el 51 no se incluye</span>
+    suma = suma + i <span class="comment"># esta línea de código se ejecuta 50 veces</span>
+<span class="print">print</span>(suma) <span class="comment"># 1275</span></code></pre>
+				</div>
+			</div>
+		
+		<div class="code_summary">
+			<h2>Ciclo while</h2>
+			<p>Analicemos ahora el ciclo <span class="code_word">while</span>. Para ejecutar un ciclo <span class="code_word">while</span> debemos establecer una condición que le indique al código cuándo entrar al ciclo y cuándo salirse. Mientras la condición sea verdadera, el bloque de código dentro del ciclo se va a ejecutar.</p>
+<!--	</div>-->
+<!--	<div class="code_summary">-->
+			<p>Veamos un ejemplo en el que le preguntamos al usuario si quiere salir del programa o no. Mientras el usuario nos diga que no, le seguiremos preguntando si desea salir. En este caso no sabemos cuántas veces el usuario nos va a decir que no, por lo tanto, un ciclo <span class="code_word">for</span> no nos serviría.</p>
+		</div>
+		<div class="code_box">
+			<div class="code_content">
+				<pre><code>salir = <span class="string">'no'</span>
+<span class="function">while </span>salir == <span class="string">'no'</span>: <span class="comment"># revisamos si la condición es verdadera</span>
+    salir = <span class="print">input</span>(<span class="string">'¿Deseas salir del programa? '</span>)
+<span class="print">print</span>(<span class="string">'Hemos salido del ciclo.'</span>)</code></pre>
+			</div>
+		</div>
