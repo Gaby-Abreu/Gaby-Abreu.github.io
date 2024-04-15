@@ -10,12 +10,21 @@
 	<body>
 		<div class="navbar">
 			<span class='title'><a href="python_academy.html">Python Academy</a></span>
-			<ul class='menu'>
-				<li><a href="condicionales.html#">Condicionales</a></li>
-				<li><a href="ciclos.html#">Ciclos</a></li>
-				<li><a href="try_except.html#">Try Except</a></li>
-				<li><a href="listas.html#">Listas</a></li>
-			</ul>
+			<!--		<ul class='menu'>-->
+			<!--			<li><a href="condicionales.html#">Condicionales</a></li>-->
+			<!--			<li><a href="ciclos.html#">Ciclos</a></li>-->
+			<!--			<li><a href="try_except.html#">Try Except</a></li>-->
+			<!--			<li><a href="listas.html#">Listas</a></li>-->
+			<!--		</ul>-->
+			<div class="dropdown">
+				<img src="menu.svg">
+				<div class="dropdown-content">
+					<a href="condicionales.html#">Condicionales</a>
+					<a href="ciclos.html#">Ciclos</a>
+					<a href="try_except.html#">Try Except</a>
+					<a href="listas.html#">Listas</a>
+				</div>
+			</div>
 		</div>
 		<div class="container">
 			<div class="column_img">
@@ -34,13 +43,13 @@
 			<div class="code_box">
 				<div class="code_content">
 				<pre><code>lista = [<span class="string">'hola'</span>, 71, 6.9]
-<span class="print">print</span>(lista[0])<span class="comment">#'hola'</span>
-<span class="print">print</span>(lista[-1])<span class="comment">#6.9</span>
+<span class="print">print</span>(lista[0])<span class="comment"># 'hola'</span>
+<span class="print">print</span>(lista[-1])<span class="comment"># 6.9</span>
 lista.append(<span class="string">'bye'</span>)
-<span class="print">print</span>(lista)<span class="comment">#['hola', 71, 6.9, 'bye']</span>
-<span class="print">print</span>(lista[-1])<span class="comment">#'bye'</span>
-lista.pop(1)<span class="comment">#quita el elemento con índice 1 de la lista, en este caso el 71</span>
-<span class="print">print</span>(lista)<span class="comment">#['hola', 6.9, 'bye']</span></code></pre>
+<span class="print">print</span>(lista)<span class="comment"># ['hola', 71, 6.9, 'bye']</span>
+<span class="print">print</span>(lista[-1])<span class="comment"># 'bye'</span>
+lista.pop(1)<span class="comment"># quita el elemento con índice 1 de la lista, en este caso el 71</span>
+<span class="print">print</span>(lista)<span class="comment"># ['hola', 6.9, 'bye']</span></code></pre>
 			</div>
 			</div>
 		<div class="code_summary">
@@ -52,7 +61,7 @@ lista.pop(1)<span class="comment">#quita el elemento con índice 1 de la lista, 
 cuadrados = []
 <span class="function">for</span> i<span class="function"> in </span>lista:	
     cuadrados.append(i**2)
-<span class="print">print</span>(cuadrados)<span class="comment">#[25, 100, 225, 400]</span>
+<span class="print">print</span>(cuadrados)<span class="comment"># [25, 100, 225, 400]</span>
 </code></pre>
 		</div>
 		</div>
@@ -62,10 +71,10 @@ cuadrados = []
 		<div class="code_box">
 			<div class="code_content">
 			<pre><code>lista = [1, 2, 4, 5]
-lista.insert(2, 3)<span class="comment">#insertamos el número 3 en la posición 2</span>
-<span class="print">print</span>(lista)<span class="comment">#[1, 2, 3, 4, 5]</span>
-lista.append(6)<span class="comment">#agrega el número 6 hasta el final de la lista</span>
-<span class="print">print</span>(lista)<span class="comment">#[1, 2, 3, 4, 5, 6]</span>
+lista.insert(2, 3)<span class="comment"># insertamos el número 3 en la posición 2</span>
+<span class="print">print</span>(lista)<span class="comment"># [1, 2, 3, 4, 5]</span>
+lista.append(6)<span class="comment"># agrega el número 6 hasta el final de la lista</span>
+<span class="print">print</span>(lista)<span class="comment"># [1, 2, 3, 4, 5, 6]</span>
 </code></pre>
 		</div>
 		</div>

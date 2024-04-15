@@ -10,12 +10,21 @@
 	<body>
 		<div class="navbar">
 			<span class='title'><a href="python_academy.html">Python Academy</a></span>
-			<ul class='menu'>
-				<li><a href="condicionales.html#">Condicionales</a></li>
-				<li><a href="ciclos.html#">Ciclos</a></li>
-				<li><a href="try_except.html#">Try Except</a></li>
-				<li><a href="listas.html#">Listas</a></li>
-			</ul>
+			<!--		<ul class='menu'>-->
+			<!--			<li><a href="condicionales.html#">Condicionales</a></li>-->
+			<!--			<li><a href="ciclos.html#">Ciclos</a></li>-->
+			<!--			<li><a href="try_except.html#">Try Except</a></li>-->
+			<!--			<li><a href="listas.html#">Listas</a></li>-->
+			<!--		</ul>-->
+			<div class="dropdown">
+				<img src="menu.svg">
+				<div class="dropdown-content">
+					<a href="condicionales.html#">Condicionales</a>
+					<a href="ciclos.html#">Ciclos</a>
+					<a href="try_except.html#">Try Except</a>
+					<a href="listas.html#">Listas</a>
+				</div>
+			</div>
 		</div>
 		<div class="container">
 			<div class="column_img">
@@ -28,7 +37,7 @@
 			</div>
 		</div>
 		<div class="code_summary">
-			Si tratáramos de convertir el string <span class="code_word">'7.9'</span> a un número entero, el código nos marcaría un error, pues 7.9 no es un número entero. Sin embargo, si usamos un try except podemos primero intentar convertirlo a entero y, en caso de no ser posible, convertirlo a un float.
+			<p>Si tratáramos de convertir el string <span class="code_word">'7.9'</span> a un número entero, el código nos marcaría un error, pues 7.9 no es un número entero. Sin embargo, si usamos un try except podemos primero intentar convertirlo a entero y, en caso de no ser posible, convertirlo a un float.</p>
 		</div>
 		<div class="code_box">
 			<div class="code_content">
@@ -38,7 +47,7 @@
     c = <span class="print">int</span>(b)
 <span class="function">except</span>:
     c = <span class="print">float</span>(b)
-<span class="print">print</span>(c)<span class="comment">#7.9</span></code></pre>
+<span class="print">print</span>(c)<span class="comment"># 7.9</span></code></pre>
 			</div>
 		</div>
 		<div class="code_summary">
